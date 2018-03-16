@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.chooseFile {
+  text-align: center;
+}
+.chooseFile>span {
+  position: relative;
+  background-color: dodgerblue;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 6px;
+  color: white;
+  overflow: hidden;
+  display: inline-block;
+}
+#upload_file {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.region {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(10, 10, 10, 0.4);
+}
+.cutDiv {
+  width: 990px;
+  height: 570px;
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+}
+.cut_left {
+  float: left;
+  width: 210px;
+  height: 100%;
+}
+#cut{
+  cursor: pointer;
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  padding: 4px 6px;
+  color: white;
+  background-color: dodgerblue;
+  text-align: center;
+  border-radius: 4px;
+}
+.cut_middle {
+  float: left;
+  width: 570px;
+  height: 100%;
+  position: relative;
+}
+#cut-imgcvs {
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 570px;
+  height: 570px;
+}
+#cut-imgbg {
+  clip: rect(0, 200px, 200px, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#img-main {
+  position: absolute;
+  /*第三层需用绝对定位浮在上面*/
+  width: 200px;
+  height: 200px;
+  border: 1px solid #fff;
+}
+.img-Divmin {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+}
+.img-up-left {
+  margin-top: -4px;
+  margin-left: -4px;
+  cursor: nw-resize;
+}
+.img-up {
+  left: 50%;
+  /*父元素盒子main宽度的一半，注意要有绝对定位*/
+  margin-left: -4px;
+  top: -4px;
+  cursor: n-resize;
+}
+.img-up-right {
+  top: -4px;
+  right: -4px;
+  cursor: ne-resize;
+}
+.img-right {
+  top: 50%;
+  margin-top: -4px;
+  right: -4px;
+  cursor: e-resize;
+}
+.img-right-down {
+  right: -4px;
+  bottom: -4px;
+  cursor: se-resize;
+}
+.img-down {
+  bottom: -4px;
+  left: 50%;
+  margin-left: -4px;
+  cursor: s-resize;
+}
+.img-left-down {
+  left: -4px;
+  bottom: -4px;
+  cursor: sw-resize;
+}
+.img-left {
+  left: -4px;
+  top: 50%;
+  margin-top: -4px;
+  cursor: w-resize;
+}
+.cut_right {
+  float: right;
+  width: 210px;
+  height: 100%;
+}

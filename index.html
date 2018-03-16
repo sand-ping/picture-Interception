@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="chooseFile"> 
+      <span>
+		图片上传解析
+		<input type="file" id="upload_file"/>
+	  </span>
+    </div>
+    <div class="region">
+      <div class="cutDiv">
+        <div class="cut_left">
+          <div onclick="cut()" id='cut'>截取</div>
+        </div>
+        <div class="cut_middle"> 
+          <canvas id='cut-imgcvs' width="1140px" height="1140px"></canvas> 
+          <img src="" id="cut-imgbg" />
+          <div id="img-main">
+            <div class="img-Divmin img-up-left"></div>
+            <div class="img-Divmin img-up"></div>
+            <div class="img-Divmin img-up-right"></div>
+            <div class="img-Divmin img-right"></div>
+            <div class="img-Divmin img-right-down"></div>
+            <div class="img-Divmin img-down"></div>
+            <div class="img-Divmin img-left-down"></div>
+            <div class="img-Divmin img-left"></div>
+          </div>
+        </div>
+        <div class="cut_right"></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/index.js"></script>
+</html>
