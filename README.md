@@ -1,0 +1,9 @@
+# picture-Interception
+用js实现原生的图片截取项目
+# 
+这是用js写的图片截取项目，主要用到:
+  画布标签canvas:putImageData,getImageData,toDataURL ...
+  截取属性clip
+  鼠标事件onmousedown、onmouseup、onmousemove ...
+  获取标签位置offsetTop,offsetLeft,offsetParent
+  等...
